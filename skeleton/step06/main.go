@@ -92,7 +92,7 @@ func _main() {
 	// 作るコーヒーの数
 	const amountCoffee = 20 * CupsCoffee
 
-	taskCtx, task := trace.NewTask(context.Background(), "make coffe")
+	taskCtx, task := trace.NewTask(context.Background(), "make coffee")
 	defer task.End()
 
 	// 材料
